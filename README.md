@@ -77,6 +77,7 @@ CameraWebServerRecorder
     
   Those two programs have various ways to control the recording, and view live streams, and download the video to you computer   
   or phone, or upload snapshots and video to Telegram, etc.  
+    
   The changes to the original files:  
   CamWebServerRecorder.ino - mount the SD card, the AP stuff, start the recorder task  
   app_httpd.cpp - the esp32 side code to handle the new paramters  
@@ -106,7 +107,8 @@ Arduino-ESP32 2.0.4
 Board: AI-Thinker ESP32-CAM  
 Huge APP  
 
-![image](https://user-images.githubusercontent.com/36938190/184581087-95c723f7-7568-4d89-aee7-f541950e2972.png)
+![image](https://user-images.githubusercontent.com/36938190/184581874-a0a66c24-0a92-4854-9117-76b3b94cfffc.png)
+
 
 Here are the new controls. 
 From the top:
