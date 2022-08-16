@@ -70,6 +70,7 @@ CameraWebServerRecorder
   http://192.168.1.67:81/stream - streaming using different port 81, so the web still responds on port 80  
     
   ... and CamWebServerRecorder adds these:  
+  
   http://192.168.1.67/control?var=interval&val=1000      -- 1000 milliseconds between frames  
   http://192.168.1.67/control?var=seglen&val=1800        -- avi file is closed and new file started every 1800 seconds  
   http://192.168.1.67/control?var=speedup&val=30         -- play 1 fps recording at 30fps when you play the avi  
