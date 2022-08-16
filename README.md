@@ -83,7 +83,7 @@ CameraWebServerRecorder
   which is a heavily modifed and simplfied rework of:  
   https://github.com/jameszah/ESP32-CAM-Video-Recorder  
     
-  Those two programs have various ways to control the recording, and view live streams, and download the video to you computer   
+  Those two programs have various ways to control the recording, and view live streams, and download the video to you computer
   or phone, or upload snapshots and video to Telegram, etc.  
     
   The changes to the original files:  
