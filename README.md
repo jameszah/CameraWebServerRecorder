@@ -40,7 +40,7 @@ CameraWebServerRecorder
   sending unix time when you click the Start Record button since your phone/computer should know the time.  Timezones have not been implemented.
   
   If you have no SD card installed, it will show 0 freespace on the SD, and continue with other functionality.  
-  When the SD runs out of diskspce, recording will stop - no deleting old stuff implemented.  (my other program have it)  
+  When the SD runs out of diskspce, recording will stop - no deleting old stuff implemented.  (my other programs have it)  
     
   You can also control this CamWebServer with simple urls, if you want to configure and start it with motioneye (or
   equivalent) as follows,  
@@ -88,18 +88,20 @@ CameraWebServerRecorder
   The changes to the original files:  
   
   CamWebServerRecorder.ino - mount the SD card, the AP stuff, start the recorder task  
+  
   app_httpd.cpp - the esp32 side code to handle the new paramters  
-  camera_index.h - this has the gziped html and javascript from espressif expanded (and easily editable),  
-                   and inclused all the changes to the web display for new parameters and controls  
+  
+  camera_index.h - this has the gziped html and javascript from espressif expanded (and easily editable), and includes all the changes to the web display for new parameters and controls  
+  
   avi.cpp - all the origninal simplfied code to record a mjpeg avi  
+  
   camer_pins.h - no changes  
     
   Work-In-Progress .... but other things to do.  
   - only works for ov2640 camera  
   - webpage does report SD freespace, but no info on recordings, including whether it is recording (if you reload the page)  
   - One-Click-Installer not done -- maybe tomorrow  
-  - didn't put in mdns - so you have to figure out your ip from serial monitor, or port authority  
-    (it should respond on 80 and 81, which would give you a clue, but has a defualt name like esp32-F41450  
+  - didn't put in mdns - so you have to figure out your ip from serial monitor, or port authority (it should respond on 80 and 81, which would give you a clue, but has a defualt name like esp32-F41450)   
       
   James Zahary  
   Aug 14, 2022  
@@ -107,8 +109,7 @@ CameraWebServerRecorder
   Free coffee https://ko-fi.com/jameszah/  
   jamzah.plc@gmail.com  
     
-  jameszah/CameraWebServerRecorder is licensed under the  
-   GNU General Public License v3.0  
+  jameszah/CameraWebServerRecorder is licensed under the GNU General Public License v3.0  
     
 Arduino 1.8.19  
 Arduino-ESP32 2.0.4  
@@ -128,6 +129,6 @@ From the top:
 2.4  speedup (muliply record framerate for playing)   
 2.5  avi segment length in seconds  
 3.  set avi segment length  
-4.  set frames per second to record (shows as seconds per frame to slow recording)  
+4.  set frames per second to record (shows as "seconds per frame" for slow recording)  
 5.  set speedup playback over record rate - this will adjust to playback all videos at 30 fps when you change framerate, but you can readjust it)  
 6.  Start and Stop recording  
