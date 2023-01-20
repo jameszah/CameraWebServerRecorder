@@ -180,9 +180,9 @@ void start_wifi() {
   String cssid;
   String cssid2;
   String cpass;
-  char ssidch[20];
-  char ssidch2[20];
-  char passch[20];
+  char ssidch[32];
+  char ssidch2[32];
+  char passch[64];
 
   File config_file = SD_MMC.open("/secret.txt", "r");
   if (config_file) {
